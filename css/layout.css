@@ -544,7 +544,7 @@ ul#nav li.current a { color: #F06000; }
 {
     font-size: 1.8em;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: rgba(225, 225, 225, 0.5);
+    color: rgba(255, 255, 255, 0.952);
     z-index: 1;
     transition: 0.5s;
 }
@@ -552,7 +552,7 @@ ul#nav li.current a { color: #F06000; }
 {
     font-size: 16px;
     font-weight: 300;
-    color: rgba(225, 225, 225, 0.5);
+    color: rgb(230, 225, 225);
     z-index: 1;
     transition: 0.5s;
 }
