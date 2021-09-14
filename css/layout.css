@@ -561,6 +561,11 @@ ul#nav li.current a { color: #F06000; }
     z-index: 1;
     transition: 0.5s;
 }
+#project .container .card .box .content h5
+{
+   font: 16px/1.9em 'librebaskerville-regular', serif;
+   color: #b8b8b8;
+}
 
 #project .container .card:nth-child(1) .box .content a
 {
