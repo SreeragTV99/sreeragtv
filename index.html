@@ -19,6 +19,10 @@
 	<link rel="stylesheet" href="css/layout.css">
    <link rel="stylesheet" href="css/media-queries.css">
    <link rel="stylesheet" href="css/magnific-popup.css">
+   
+   <!-- AJAX
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
    <!-- Script
    ================================================== -->
@@ -266,38 +270,43 @@
    <!-- Contact Section
    ================================================== -->
    <section id="contact">
-
-      <div class="row">
-
-         <div class="three columns">
-
-            <img class="profile-pic"  src="images/profilepic.jpg" alt="" />
-
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row">
-
-               <div class="columns contact-details">
-
-                  <h2>Contact Details</h2>
-                  <p class="address">
-						   <span>Sreerag T V</span><br>
-						   <span>
-						      Kandoth.payyanur,kannur 
-                     </span><br>
-                     <span>sreeragtv03@gmail.com</span>
-					   </p>
-
+              <img class="profile-pic"  src="images/profilepic.jpg"/>
+               <div class="container">
+                  
+               <form class="box" id="submit-form" action="">
+                  <h2>Contact Me</h2>
+                  <br>
+                  <input type="text" id="name" name="name" placeholder="Your name..">
+                  <input type="email" id="email" name="email" placeholder="Your mail address..">
+                  <select id="country" name="country">
+                      <option value="india">India</option>
+                      <option value="australia">Australia</option>
+                      <option value="canada">Canada</option>
+                      <option value="usa">USA</option>
+                  </select>
+                  <textarea id="message" name="message" placeholder="Write something.."></textarea>
+                  <input type="submit" value="Submit">
+              </form>
                </div>
-
-            </div> 
-
-         </div> 
-
-      </div>
-
+              <script>
+                  $("#submit-form").submit((e)=>{
+                      e.preventDefault()
+                      $.ajax({
+                          url:"https://script.google.com/macros/s/AKfycbx5RM4EMMZZiUhHEdCAwonWMlj5IC0hZXW4IzNOM2sVm66UU3hQ3c2cUYq6fJ35kNCgxA/exec",
+                          data:$("#submit-form").serialize(),
+                          method:"post",
+                          success:function (response){
+                              alert("Your message submitted successfully")
+                              window.location.reload()
+                              //window.location.href="https://google.com"
+                          },
+                          error:function (err){
+                              alert("Something Wrong")
+              
+                          }
+                      })
+                  })
+              </script>
    </section>
 
 
