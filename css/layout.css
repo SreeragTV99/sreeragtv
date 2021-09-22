@@ -327,6 +327,10 @@ ul#nav li.current a { color: #F06000; }
 #skill h5{
    color: rgb(202, 202, 202);
 }
+#skill .container{
+   padding: 45px;
+}
+
 #skill .container div{
    border-radius: 15px 0px 15px 0px;
    padding:15px;
@@ -496,7 +500,8 @@ ul#nav li.current a { color: #F06000; }
                 5px 5px 15px rgba(0, 0, 0, 0.3), 
                 -5px -5px 15px rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    margin: 30px;  
+    margin: 30px;
+    padding: 45px;  
 }
 
 #project .container .card .box
@@ -686,14 +691,15 @@ ul#nav li.current a { color: #F06000; }
 
 #contact {
    background:#00011d;
-   padding-top: 96px;
-   padding-bottom: 102px;
+   padding-top: 60px;
+   padding-bottom: 60px;
    color: white;
+   justify-content: center;
 }
-#contact .section-head { margin-bottom: 42px; }
+/* #contact .section-head { margin-bottom: 42px; } */
 
-#contact a, #contact a:visited  { color: #11ABB0; }
-#contact a:hover, #contact a:focus { color: #fff; }
+/* #contact a, #contact a:visited  { color: #11ABB0; }
+#contact a:hover, #contact a:focus { color: #fff; } */
 
 #contact h2 {
    font: 18px/24px 'opensans-bold', sans-serif;
@@ -701,18 +707,32 @@ ul#nav li.current a { color: #F06000; }
    letter-spacing: 3px;
    color: #ffffff;
    margin-bottom: 6px;
+   text-align: center;
+   padding-top: 20px;
 }
 #contact .profile-pic {
-   position: relative;
+   position:relative;
    width: 120px;
    height: 120px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
    border-radius: 100%;
 }
-#contact p {
+#contact .container
+{
+   background: #00011a;
+   border-radius: 5%;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   box-shadow: 10px 10px 15px rgba(70,70,70,.12),-10px -10px 15px #07111a60;
+}
+
+/* #contact p {
    padding-top: 30px;
    color: rgb(190, 190, 190);
-}
-#contact .header-col { padding-top: 6px; }
+} */
+/* #contact .header-col { padding-top: 6px; }
 #message-warning, #message-success {
    display: none;
 	background: #0F0F0F;
@@ -727,12 +747,100 @@ ul#nav li.current a { color: #F06000; }
 #message-warning i,
 #message-success i {
    margin-right: 10px;
-}
-#image-loader {
+} */
+/* #image-loader {
    display: none;
    position: relative;
    left: 18px;
    top: 17px;
+} */
+/* ------------------------------------------------------------------ */
+#contact.box{
+   width: 300px;
+   padding: 40px;
+   position:absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: #000000;
+   text-align: center;
+}
+#contact .box input[type = "text"],.box input[type = "email"]{
+   border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #3498db;
+   padding: 14px 10px;
+   width: 280px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+}
+#contact .box #country
+{
+   border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #3498db;
+   padding: 14px 10px;
+   width: 280px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+}
+#contact .box #message
+{
+   border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #3498db;
+   padding: 14px 10px;
+   width: 280px;
+   outline: none;
+   color: white;
+   border-radius: 35px;
+   transition: 0.25s;
+}
+#contact .box input[type = "text"]:focus, .box input[type = "email"]:focus{
+   width: 320px;
+   border-color: #2ecc71;
+}
+#contact .box #country:focus
+{
+   width: 320px;
+   border-color: #2ecc71;
+   background: #00011d;
+   
+}
+#contact .box #message:focus
+{
+   width: 320px;
+   border-color: #2ecc71;
+}
+#contact .box input[type = "submit"]{
+   border: 0;
+   background: none;
+   display: block;
+   margin: 20px auto;
+   text-align: center;
+   border: 2px solid #2ecc71;
+   padding: 14px 40px;
+   outline: none;
+   color: white;
+   border-radius: 24px;
+   transition: 0.25s;
+   cursor: pointer;
+}
+#contact .box input[type = "submit"]:hover{
+   background: #2ecc71;
 }
 
 /* ------------------------------------------------------------------ */
