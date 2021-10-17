@@ -23,7 +23,10 @@
 /* a. General Styles
 /* ------------------------------------------------------------------ */
 
-body { background: #00011d;
+body { 
+   /* background: #00011d; */
+   background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00011d, #13001a);
    /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -143,12 +146,18 @@ header .scrolldown a:hover { color: #11ABB0; }
    left: 0;
    top: 0;
 }
-.opaque { background-color:#00011d; }
+.opaque { 
+   /* background-color:#00011d;  */
+   background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00011d, #13001a);
+}
 
 /* hide toggle button */
 #nav-wrap > a.mobile-btn {
     display: none;
-    background-color: #00011d;
+    /* background-color: #00011d; */
+    background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
+	 background: linear-gradient(to right, #00011d, #13001a);
 }
 
 ul#nav {
@@ -187,7 +196,7 @@ ul#nav li a {
 
 ul#nav li a:active { background-color: transparent !important; }
 ul#nav li.current a { color: #F06000; }
-
+ul#nav li a:hover{ color: #833501; }
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -335,6 +344,8 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 15px 0px 15px 0px;
    padding:15px;
    margin:5px auto 30px auto;
+   background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00011d, #13001a);
    box-shadow: 10px 10px 15px rgba(58, 58, 58, 0.12),-10px -10px 15px rgba(92, 28, 17, 0.705);
 }
 .scrollable{
@@ -691,6 +702,8 @@ ul#nav li.current a { color: #F06000; }
 
 #contact {
    background:#00011d;
+   background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00011d, #13001a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    padding-top: 60px;
    padding-bottom: 60px;
    color: white;
@@ -718,6 +731,8 @@ ul#nav li.current a { color: #F06000; }
 #contact .container
 {
    background: #00011a;
+   background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00011d, #13001a);
    border-radius: 5%;
    padding-top: 20px;
    padding-bottom: 20px;
@@ -821,7 +836,7 @@ ul#nav li.current a { color: #F06000; }
 
 footer {
    padding-top: 48px;
-   margin-bottom: 48px;
+   margin-bottom: 0px;
    color: #303030;
    background-color: rgb(0, 2, 29);
    font-size: 14px;
