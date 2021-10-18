@@ -166,6 +166,15 @@
       clear: both;
    }
 
+   ul#nav .logo a .logo_img{
+      align-items: center;
+      align-content: center;
+      height: 60px;
+      padding-left: 6px;
+      padding-bottom: 10px;
+
+   }
+
    ul#nav li {
       display: block;
       height: auto;      
@@ -285,7 +294,7 @@
 
    /* contact Section
    ----------------------------------------------------------------------- */
-   #contact { padding-bottom: 66px; }
+   /* #contact { padding-bottom: 66px; }
    #contact .section-head { margin-bottom: 12px; }
    #contact .section-head h1 {
       font: 16px/24px 'opensans-bold', sans-serif;            
@@ -296,10 +305,10 @@
    #contact h1 span { display: block; }
    #contact .header-col { padding-top: 0; }
    #contact .header-col h1:before { content: none;	}
-   #contact .section-head p.lead { text-align: center;}
+   #contact .section-head p.lead { text-align: center;} */
 
    /* form */
-   #contact label {
+   /* #contact label {
       float: none;
       width: 100%;
    }
@@ -313,7 +322,7 @@
    #message-warning, #message-success {
       width: 100%;
       margin-left: 0;
-   }
+   } */
 
 
    /* footer
