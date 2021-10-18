@@ -289,6 +289,8 @@ ul#nav li a:hover{ color: #833501; }
    box-sizing: border-box;
    border-radius: 8px 8px 0px 0px;
    background-color:rgb(0, 0, 39);
+   background: -webkit-linear-gradient(to right, rgb(0, 0, 39), #1a0010);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, rgb(0, 0, 39), #1a0010);
 }
 .card .card-body{
    text-align: left;
@@ -746,8 +748,8 @@ ul#nav li a:hover{ color: #833501; }
 #contact .container
 {
    background: #00011a;
-   background: -webkit-linear-gradient(to right, #00011d, #13001a);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to right, #00011d, #13001a);
+   background: -webkit-linear-gradient(to right, #00011d, #14031a);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #00011d, #14031a);
    border-radius: 5%;
    padding-top: 20px;
    padding-bottom: 20px;
