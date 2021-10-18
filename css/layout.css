@@ -127,6 +127,21 @@ header .scrolldown a:hover { color: #11ABB0; }
 
 /* primary navigation
 --------------------------------------------------------------------- */
+.logo{
+	float: left;
+	margin-left: 10%;
+}
+.logo .logo_img{
+	width: 60px;
+	height: 50px;
+   color: white;
+   margin-top: 0%;
+   margin-bottom: 0%;
+}
+.logo a{
+	display:block;
+}
+
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
 	 margin: 0;
 	 padding: 0;
